@@ -1,0 +1,11 @@
+prefix=PREFIX
+exec_prefix=${prefix}
+libdir=${exec_prefix}/lib
+includedir=${prefix}/include
+
+Name: GMP 5.1.3 
+Description: GMP 5.1.3 library 
+
+Version: 5.1.3
+Libs: -L${libdir} -lgmp
+Cflags: -I${includedir}

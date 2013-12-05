@@ -83,6 +83,10 @@ install-source:
 
 pkgconfig-source:
 	@echo "\n Creating pkg-config files for $(POD_NAME) \n"
+
+	sed s@PREFIX@$(BUILD_PREFIX)@ gmp-5.1.3.pc > $(BUILD_PREFIX)/lib/pkgconfig/gmp-5.1.3.pc
+	echo $(BUILD_PREFIX)/lib/pkgconfig/gmp-5.1.3.pc >> pod-build/install_manifest.txt
+
 	@touch pkgconfiged.touch
 
 
