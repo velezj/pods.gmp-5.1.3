@@ -1,0 +1,6 @@
+pod-build/
+*~
+*.touch
+*.tar.*
+gmp-5.1.3/
+
